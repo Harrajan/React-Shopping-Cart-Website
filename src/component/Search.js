@@ -17,10 +17,10 @@ changeHandler = event => {
 }
 
     render() {
-        
+
         return (
             <div className={styles.container}>
-                <p>Search What You Want</p>
+                <p>Search Here:</p>
                 <div>
                  <input type="text" value={this.state.text} onChange={this.changeHandler} placeholder='Search ...'/>
                  <br/>

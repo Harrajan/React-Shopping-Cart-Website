@@ -16,7 +16,7 @@ const ShopCart = () => {
         </div>
 
         {
-            state.itemCounter > 0 && 
+            state.itemCounter > 0 &&
             <div className={styles.payments}>
                 <p><span>Total Items :</span>{ state.itemCounter }</p>
                 <p><span>Total payment :</span>{ state.total }</p>
@@ -26,22 +26,22 @@ const ShopCart = () => {
                 </div>
             </div>
         }
-    
+
             {
-               state.itemCounter === 0 && !state.checkout && 
+               state.itemCounter === 0 && !state.checkout &&
                <div className={styles.complete}>
-                   <h3>Want to Buy?</h3>
-                   <Link to="/products">Back to shop</Link>
+                   <h3>Buying?</h3>
+                   <Link to="/products">Back to the shop</Link>
                </div>
            }
         {
-            state.checkout && 
+            state.checkout &&
             <div className={styles.complete}>
                 <h3>Cheked Out Successfully</h3>
-                <Link to="/products">Buy More</Link>
+                <Link to="/products">Buy More Here</Link>
             </div>
         }
-       
+
 
         </div>
     );

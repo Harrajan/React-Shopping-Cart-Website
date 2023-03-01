@@ -20,16 +20,16 @@ const Navbar = () => {
                    <li className={styles.dropdown}>
                         <Link to="#" className={styles.dropbtn}>Services</Link>
                         <div className={styles.dropdownContent}>
-                            <Link to="#">service 1</Link>
-                            <Link to="#">service 2</Link>
-                            <Link to="#">service 3</Link>
+                            <Link to="#">Service 1</Link>
+                            <Link to="#">Service 2</Link>
+                            <Link to="#">Service 3</Link>
                         </div>
                         <img src={down} alt="down"/>
                    </li>
                </ul>
            </div>
            <div className={styles.logo}>
-               <Link to="/cart"><img src={shopCart} alt="shopcart"/></Link> 
+               <Link to="/cart"><img src={shopCart} alt="shopcart"/></Link>
                <span>{state.itemCounter}</span>
            </div>
         </div>

@@ -9,8 +9,8 @@ const ProductDetails = (props) => {
     const data = useContext(ProductsContext)
     const product = data[id - 1]
     const {image , title , description , price , category } = product;
-    
-    
+
+
     return (
         <div className={styles.container}>
             <img src={image} alt="product" />
@@ -20,7 +20,7 @@ const ProductDetails = (props) => {
                 <p className={styles.category}><span>Category: </span>{category}</p>
                 <div className={styles.buttonContainer}>
                     <span className={styles.price}>{price} $</span>
-                    <Link to='/products'>Back to shop</Link>
+                    <Link to='/products'>Back to the shop</Link>
                 </div>
             </div>
         </div>
